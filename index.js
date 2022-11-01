@@ -51,28 +51,74 @@
 
 // Task 1 --------------------
 
-let array1 = [-3,-8,-60,1,3,6,8,10,12,-23,-87,46,66,88,99];
+// let array1 = [-3,-8,-60,1,3,6,8,10,12,-23,-87,46,66,88,99];
 
-function favnumbers(num) {
-    return num > 0
-}
+// function favnumbers(num) {
+//     return num > 0
+// }
 
-function sumEl(num, ind) {
-    return num + ind
-}
+// function sumEl(num, ind) {
+//     return num + ind
+// }
 
-let numbers1 = array1.filter(favnumbers);
-// console.log(numbers1);
+// let numbers1 = array1.filter(favnumbers);
+// // console.log(numbers1);
 
-let numbersSum = array1.reduce(sumEl);
+// let numbersSum = array1.reduce(sumEl);
 
-// console.log(numbersSum);
-
-
+// // console.log(numbersSum);
 
 
 
 
-// task 2 -----------------------------------------------------
 
 
+// task 2 -------------------------???----------------------------
+
+
+
+
+// const array11 = [
+//     {
+//         itemz: "gio",
+//         b: "nika",
+//         c: "lika",
+//         itemz: "rati",
+//         b: "kvati",
+//         itemz: "gio",
+
+//     }
+// ];
+
+// const calculateS = array11.reduce(function(total, current) {
+//     return {...total, ...current}
+// })
+// console.log(calculateS);
+
+
+
+
+
+// task 3 ------------------------------------------
+
+
+class car {
+        constructor(brand, model, speed = 100, motion = "car is not moving") {
+           this.brand = brand;
+           this.model = model;
+           this.speed = speed;
+           this.motion = motion;
+        }
+
+        check_motion = () => {
+            if(this.speed > 0) {
+                this.motion = "Car can Move!"
+            }
+            return this.motion
+        }
+    }
+
+    const stig = new car ("bmw","m6",143);
+    // console.log(stig.brand);
+    // console.log(stig.speed);
+    console.log(stig.motion);
